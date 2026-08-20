@@ -1,5 +1,4 @@
 import { Mood, Person } from '@/types';
-import AlejandraAvatar from '@/components/avatars/AlejandraAvatar';
 import { Zap, Moon, Smile, AlertTriangle } from 'lucide-react';
 
 interface Props {
@@ -30,7 +29,7 @@ export default function PersonCard({ person, mood, onMoodChange }: Props) {
         <div className="w-20 h-20 rounded-2xl bg-cream-50 flex items-center justify-center border-2 border-cream-200 shadow-card overflow-hidden animate-float">
           {isRoberto
             ? <img src="/images/avatars/roberto_avatar.jpg" alt="Roberto" className="h-full w-full object-cover" />
-            : <AlejandraAvatar size={76} mood={mood}/>
+            : <img src="/images/avatars/alejandra_avatar.jpg" alt="Alejandra" className="h-full w-full object-cover" />
           }
         </div>
         <div className={`absolute -bottom-1 -right-1 w-6 h-6 rounded-full flex items-center justify-center text-white shadow-card
